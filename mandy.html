@@ -10,7 +10,7 @@
     .cards {
       position: relative;
       margin: 100px auto;
-      max-width: 300px;
+      max-width: 250px;
     }
     
     .cards__nav {
@@ -34,7 +34,7 @@
     .cards__card {
       background-color:aqua;
       border: 2px solid #0b350b;
-      height: 450px;
+      height: 350px;
       width: 100%;
       position: absolute;
       top: 0;
@@ -121,13 +121,20 @@
       font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     
-    .p
+    .text
     {
+
       text-align: center;
+  font-size:180%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+ 
+   padding:10px;
+   
     }
      
      
-    
+
     @media (max-width: 480px) {
       .cards {
         margin: 100px auto;
@@ -171,10 +178,12 @@
     <div class="cards js-cards">
     <div class="cards__container js-cards-container" style="height: 454px;">
     
-    <div class="cards__card is-active" data-card-index="0"><p align="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro officia dolorum, doloribus vero quasi voluptates? Qui veniam recusandae delectus officiis incidunt, cupiditate illo, ullam fugiat eum quae reprehenderit in vel!</p></div>
-    <div class="cards__card" data-card-index="1"> <p align="center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, harum deleniti, at ipsam qui reiciendis similique illo dignissimos officia atque rerum illum suscipit facere eaque. Voluptates repudiandae minus sint ullam!</p></div>
-    <div class="cards__card" data-card-index="2"><p align="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam facilis, suscipit animi necessitatibus tempora repellendus vero! Sed nulla perferendis quaerat earum, quibusdam eaque odit laborum expedita rerum vel vitae soluta?</div>
-    <div class="cards__card" data-card-index="3"><p align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium quam libero explicabo nostrum, tempore quae? Minima molestiae hic, velit nam excepturi ipsa provident totam natus, ab autem quos ea.</p></div>
+    
+      
+    <div class="cards__card is-active" data-card-index="0"><p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro officia s </p></div>
+    <div class="cards__card" data-card-index="1"> <p class="text" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, harum deleniti, at ipsam qui reiciendis </p></div>
+    <div class="cards__card" data-card-index="2"><p class="text" >Lorem, ipsum dolor sit amet consectetur </p></div>
+    <div class="cards__card" data-card-index="3"><p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></div>
     <nav class="cards__nav">
     <a class="button js-next">next</a>
     <a class="button js-previous" disabled="disabled">previous</a>
