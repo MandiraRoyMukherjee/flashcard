@@ -4,7 +4,7 @@
     <meta name="apple-mobile-web-app-title" content="CodePen">
     <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
     <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-    <title>CodePen - Simple CSS animated cards</title>
+    <title>Flash Card </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <style>
     .cards {
@@ -14,29 +14,33 @@
     }
     
     .cards__nav {
-      position: absolute;
-      right: -50px;
-      bottom: 40px;
+      position: fixed;
+     float:right;
+     
+      bottom: 20px;
       z-index: 10;
+  
      
     } 
     .cards__nav .button {
       text-align: center;
       display: block;
-      margin-bottom: 4px;
+      margin-bottom:80px;
       width: 100px;
       height: 20px;
+      float:right;
     }
     
     .cards__container {
       position: relative;
       width: 100%;
       max-width: 300px;
+      padding: 70px;
     }
     
     .cards__card {
-      background-color:aqua;
-      border: 2px solid #0b350b;
+      background:antiquewhite;
+      border: 4px solid #0b350b;
       height: 350px;
       width: 100%;
       position: absolute;
@@ -103,8 +107,9 @@
       transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
       -webkit-transition-property: background-color, border-color;
       transition-property: background-color, border-color;
-      border: 4px solid black;
+      border: 6px solid black;
       letter-spacing: .012em;
+      
     }
     .button:hover {
       background-color: #1D891D;
@@ -120,7 +125,7 @@
     body {
       height: 100%;
       width: 100%;
-      background-color: #ECECEC;
+      background:linear-gradient(to right: #0AC2F5; #0DF3ED);
       font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     
@@ -138,7 +143,7 @@
      
      
 
-    @media (max-width: 1000px) {
+    @media (max-width: 768px) {
       .cards {
         margin: 400px auto;
         max-width: 300px;
@@ -146,7 +151,8 @@
       }
     
       .cards__nav {
-        right: -20px;
+        bottom: 850px;
+        
       }
 
       .cards__nav .button {
@@ -160,7 +166,7 @@
     .cards__container {
       position: relative;
       width: 100%;
-      max-width: 350px;
+      max-width: 450px;
     }
     
       .cards__card {
@@ -198,17 +204,23 @@
     
     
       
-    <div class="cards__card is-active" data-card-index="0"><p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro officia s </p></div>
-    <div class="cards__card" data-card-index="1"> <p class="text" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, harum deleniti, at ipsam qui reiciendis </p></div>
-    <div class="cards__card" data-card-index="2"><p class="text" >Lorem, ipsum dolor sit amet consectetur </p></div>
-    <div class="cards__card" data-card-index="3"><p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></div>
-    <nav class="cards__nav">
+    <div class="cards__card is-active" data-card-index="0"><p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, natus. Inventore nemo eius quibusdam sunt, iste earum! Sint necessitatibus tempora in dolores mollitia tempore asperiores nihil, ullam minima. Mollitia, amet. </p></div>
+    <div class="cards__card" data-card-index="1"> <p class="text" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti pariatur quidem ex excepturi ipsam rerum tempora officia eum nulla nobis, esse ducimus! Ratione ullam ab quisquam quis, et error?
+       </p></div>
+    <div class="cards__card" data-card-index="2"><p class="text" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dolor, modi, eos nesciunt nihil recusandae ipsam animi tempore, dicta aliquam provident laudantium fugit sed reprehenderit beatae ipsa qui nostrum adipisci. </p></div>
+    <div class="cards__card" data-card-index="3"><p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus reprehenderit vel iusto quam vero adipisci dolor fugiat veritatis maiores officia, inventore, incidunt quae eaque facere in repellat error earum asperiores. </p></div>
+   <nav class="cards__nav">
+   
     <a class="button js-next">next</a>
+    <a class="button " style="background-color: red;">Vote</a>
     <a class="button js-previous" disabled="disabled">previous</a>
-    <a class="button " >Vote</a>
+  
     </nav>
+    
     </div>
+    
     </div>
+    
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script id="rendered-js">
